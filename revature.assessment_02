@@ -1,0 +1,41 @@
+package assessment.in;
+
+import java.util.Scanner;
+
+public class Question_1 {
+
+	public static void main(String[] args) {
+		float tax;
+		Scanner scanner = new Scanner(System.in);
+		System.out.println("Wlecome Calculation tax:");
+		System.out.println("Enter gender tax");
+		String gender = scanner.nextLine();
+		System.out.println("Enter amount");
+		int  income = scanner.nextInt();
+		
+		if(gender.equals("female") || gender.equals("Female")) {
+			if(income<0) {
+				throw new RuntimeException("invalid income");
+			}
+				
+			else if (income ==0 || income<=190000) {
+				System.out.println("no tax");
+			}
+				
+			else if (income >=190001 || income<=500000) {
+				tax=income*10/100;
+				System.out.println("tax"+tax);
+			}
+				
+			else if (income >=500000 || income<=800000) {
+				tax=income*20/100;
+				System.out.println("tax"+tax);
+			}
+				
+				
+			
+		}
+
+
+	}
+}
