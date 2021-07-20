@@ -1,0 +1,21 @@
+package assessment.in;
+
+import java.util.Scanner;
+
+public class Question_2 {
+
+	public static void main(String[] args) {
+		
+		   Scanner scanner = new Scanner(System.in);
+			System.out.println("Enter eggs number");
+			int x=scanner.nextInt();
+			int y=x/144;
+			
+			int z=x%144;
+			int a=z/12;
+			int b=z%12;
+			
+			System.out.println("numbeer of eggs :, "+y+"=gross ,"+a+"=dozen ,"+b+"=other");
+			scanner.close();	
+	}	
+}
